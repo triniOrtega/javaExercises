@@ -4,6 +4,8 @@
  */
 package programmingactivities;
 
+import programmingactivities.objectoriented.Circle;
+
 import java.io.BufferedWriter;
 import java.io.File;  // Import the File class
 import java.io.FileWriter;
@@ -13,7 +15,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import programmingactivities.objectoriented.Circle;
 
 /**
  *
@@ -24,14 +25,15 @@ public class EjerciciosMigue {
     int myValue = 10;
 
     public EjerciciosMigue() {
+        System.setProperty("line.separator", "\n");
         System.out.println("constructor defecto");
 
     }
 
-    public void ejercicio4() {
-        int a = -5;
-        int b = 8;
-        int c = 6;
+    public void ejercicio4(int a, int b, int c) {
+//        int a = -5;
+//        int b = 8;
+//        int c = 6;
 
         System.out.println(a + b * c);
 
@@ -76,7 +78,7 @@ public class EjerciciosMigue {
         System.out.println("variable 1 = " + variable1 + "; variable 2 = " + variable2);
     }
 
-    public void ejercicio19() {
+    public String ejercicio19() {
         Scanner decimalNumber = new Scanner(System.in);
         System.out.println("Enter a number ");
         int decnumber = decimalNumber.nextInt();
@@ -87,7 +89,8 @@ public class EjerciciosMigue {
             resto = "" + decnumber % 2 + resto;
             decnumber = decnumber / 2;
         }
-        System.out.println("El numero " + auxiliar + " en binario es: " + decnumber + resto);
+        return  "El numero " + auxiliar + " en binario es: " + decnumber + resto;
+
     }
 
     public void ejercicio37() {

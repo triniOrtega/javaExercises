@@ -23,7 +23,7 @@ public class EjerciciosMigueMain {
 
         switch (exerciseNumber.nextInt()) {
             case 4:
-                ejerciciosMigue.ejercicio4();
+                ejerciciosMigue.ejercicio4(-5,8, 6);
                 break;
             case 7:
                 ejerciciosMigue.ejercicio7();
@@ -35,7 +35,7 @@ public class EjerciciosMigueMain {
                 ejerciciosMigue.ejercicio15();
                 break;
             case 19:
-                ejerciciosMigue.ejercicio19();
+                System.out.println(ejerciciosMigue.ejercicio19());
                 break;
             case 37:
                 ejerciciosMigue.ejercicio37();
