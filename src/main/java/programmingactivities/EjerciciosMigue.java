@@ -48,12 +48,7 @@ public class EjerciciosMigue {
 
     }
 
-    public void ejercicio7() {
-
-        Scanner teclado_int = new Scanner(System.in);
-
-        System.out.println("Enter a number ");
-        int number = teclado_int.nextInt();
+    public void ejercicio7(int number) {
 
         for (int i = 1; i <= 10; i++) {
             int producto = number * i;
@@ -69,19 +64,15 @@ public class EjerciciosMigue {
         System.out.println("area = " + pi * radio * radio);
     }
 
-    public void ejercicio15() {
-        int variable1 = 1;
-        int variable2 = 2;
+    public String ejercicio15(int variable1, int variable2) {
         int auxiliar = variable1;
         variable1 = variable2;
         variable2 = auxiliar;
-        System.out.println("variable 1 = " + variable1 + "; variable 2 = " + variable2);
+        return "variable 1 = " + variable1 + "; variable 2 = " + variable2;
     }
 
-    public String ejercicio19() {
-        Scanner decimalNumber = new Scanner(System.in);
-        System.out.println("Enter a number ");
-        int decnumber = decimalNumber.nextInt();
+    public String ejercicio19(int decnumber) {
+
         int auxiliar = decnumber;
         String resto = "";
 

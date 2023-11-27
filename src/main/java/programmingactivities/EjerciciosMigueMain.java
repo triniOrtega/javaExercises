@@ -26,16 +26,25 @@ public class EjerciciosMigueMain {
                 ejerciciosMigue.ejercicio4(-5,8, 6);
                 break;
             case 7:
-                ejerciciosMigue.ejercicio7();
+                Scanner teclado_int = new Scanner(System.in);
+
+                System.out.println("Enter a number ");
+                int number = teclado_int.nextInt();
+
+                ejerciciosMigue.ejercicio7(number);
                 break;
             case 11:
                 ejerciciosMigue.ejercicio11();
                 break;
             case 15:
-                ejerciciosMigue.ejercicio15();
+                System.out.println(ejerciciosMigue.ejercicio15(2, 3));
                 break;
             case 19:
-                System.out.println(ejerciciosMigue.ejercicio19());
+                Scanner decimalNumber = new Scanner(System.in);
+                System.out.println("Enter a number ");
+                int decnumber = decimalNumber.nextInt();
+
+                System.out.println(ejerciciosMigue.ejercicio19(decnumber));
                 break;
             case 37:
                 ejerciciosMigue.ejercicio37();
